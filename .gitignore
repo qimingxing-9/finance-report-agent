@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# Environment
+.env
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Uploads & reports (runtime data)
+uploads/
+reports/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Docker volumes
+mysql_data/
+redis_data/
+milvus_data/
+
+# OS
+.DS_Store
+Thumbs.db
