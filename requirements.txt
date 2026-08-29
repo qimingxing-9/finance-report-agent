@@ -1,0 +1,8 @@
+# requirements.txt — Python 依赖
+# fastapi uvicorn[standard] pydantic-settings
+# google-adk litellm
+# pymupdf
+# pymilvus[model]
+# sqlalchemy[asyncio] aiomysql
+# redis
+# python-multipart

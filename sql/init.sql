@@ -1,0 +1,3 @@
+-- sql/init.sql — MySQL 建表脚本
+-- 三张表：report_info / financial_metric / analysis_report
+-- 详见 .docs/DATABASE.md

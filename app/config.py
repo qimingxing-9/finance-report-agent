@@ -1,0 +1,5 @@
+# app/config.py — 环境配置
+# - pydantic-settings 读取 .env
+# - GLM_API_KEY / GLM_BASE_URL / DEEPSEEK_API_KEY / DEEPSEEK_BASE_URL
+# - MYSQL_URL / REDIS_URL / MILVUS_URI / EMBEDDING_MODEL
+# - SESSION_TTL_DAYS / OFF_PEAK_WINDOW

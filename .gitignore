@@ -20,9 +20,14 @@ env/
 *.swp
 *.swo
 
-# Uploads & reports (runtime data)
-uploads/
-reports/
+# Claude Code
+.claude/
+
+# Uploads & reports (runtime data, keep directory structure)
+uploads/*
+!uploads/.gitkeep
+reports/*
+!reports/.gitkeep
 
 # Node / Frontend
 frontend/node_modules/
