@@ -21,6 +21,8 @@
 
 ```
 finance_agent/
+├── .docs/                     # 项目文档目录
+│   └── PROJECT.md             # 完整项目说明书
 ├── app/
 │   ├── main.py                 # FastAPI 入口、生命周期管理
 │   ├── config.py               # pydantic-settings 环境配置
