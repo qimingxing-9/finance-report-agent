@@ -1,2 +1,10 @@
-// src/pages/UploadPage.tsx — 上传页
-// - FileUpload 组件 → 上传成功跳转 /status/{sid}
+import FileUpload from '../components/FileUpload'
+
+export default function UploadPage() {
+  return (
+    <div>
+      <h2 className="text-lg font-medium text-gray-800 mb-6">上传财报 PDF</h2>
+      <FileUpload />
+    </div>
+  )
+}
