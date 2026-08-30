@@ -1,9 +1,9 @@
 import uuid
 
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, UploadFile
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.core.task_manager import init_task_status, read_task_status
+from app.core.task_manager import init_task_status, read_task_status, start_pipeline_task
 from app.schemas.api import ApiResponse, StatusResponseData, UploadResponseData
 from app.storage.mysql import get_db
 from app.storage.models import ReportInfo
@@ -47,6 +47,9 @@ async def upload_report(
 
     # Redis 初始化任务状态
     await init_task_status(session_id)
+
+    # 启动后台流水线任务
+    start_pipeline_task(session_id)
 
     return ApiResponse(
         data=UploadResponseData(session_id=session_id, status="pending")
